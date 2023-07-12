@@ -27,7 +27,7 @@ Backdoor generator. I mean, `MWYM` is here to check which backdoor should be the
 |Name|OS|PRIV|PROTO|SERVICE|DESC|STEALTH(0to5)|Implemented|
 |-|-|-|-|-|-|-|-|
 |MAGMAR|Linux|?|SSH|SSH|Adding id_pub.rsa to current `~/.ssh/authorized_keys`.|`2` if file doesn't exist, else `4|✅|
-|ARBOK|Linux|?|PHP|APACHE2,PHP|Create PHP backdoor function|`2` if file doesn't exist, else `4`|✅|
+|ARBOK|Linux|?|PHP|APACHE2,PHP|Create PHP backdoor file for each php files and name it `.bk.<filename>`|`2` if file doesn't exist, else `4`|✅|
 |VOLTORB|Linux|?|PHP|APACHE2,PHP|Pretty much a defacer, creating a subdomain for command execution|`2` if file doesn't exist, else `4`|❌|
 |ASPICOT|Linux|?|SSH|any|Create a listener on preopened port sharing it whith his service.|?|❌|
 
