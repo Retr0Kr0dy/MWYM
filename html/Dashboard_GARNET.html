@@ -1,0 +1,112 @@
+<html>
+	<head>
+		<title>GARNET - Dashboard</title>
+		<script>
+			function show(shown) {
+				polls = document.querySelectorAll('[id^=Page]');
+				Array.prototype.forEach.call(polls, callback);
+
+				function callback(element, iterator) {
+					document.getElementById(element.id).style.display='none';
+				}
+				document.getElementById(shown).style.display='block';
+				return false;
+			}
+		</script>
+	</head>
+	<nav>
+		<ul class="navbar" >
+			<li><a href="#" class="title">GARNET</a></li>
+			<li><a href="#" onclick="return show('PageHome');" class="ali">Home</a></li>
+			<li><a href="#" onclick="return show('PageShell');" class="ali">Shell</a></li>
+			<li><a href="#" onclick="return show('PageTest');" class="ali">Test</a></li>
+		</ul>
+	</nav>
+	<body bgcolor="f9f9f9">
+		<div class="bodystyle">
+			<div id="PageHome">
+				Home page
+			</div>
+			<div id="PageShell" style="display: none" class="shellstyle">
+				<iframe src="<INSERT YOUR PAGE HERE>" class="shellstyle">
+					Alternative text for browsers that do not understand IFrames.
+				</iframe>
+			</div>
+			<div id="PageTest" style="display: none">
+				Test Test Test
+			</div>
+		</div>
+	</body>
+</html>
+ 
+<style>
+    .bodystyle {
+        background-color: #dfdfdf;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        min-height: 85vh;
+        font-family: Hack, monospace;
+        border-radius: 10px;
+	}
+ 
+    .shellstyle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+//              min-width: 250vh;
+        min-width: 100%;
+        min-height: 85vh;
+        border: none;
+        border-radius: 10px;
+    }
+ 
+	.navbar {
+		text-align: left;
+		font-family: Consolas;
+		list-style: none;
+		display: flex;
+		margin: 20px;
+		padding: 16px;
+		text-decoration: none;
+		color: #8F8F8F;
+		font-size: 24px;
+		font-weight: 900;
+	}
+ 
+    .ali {
+        text-decoration: none;
+        color: #8f8f8f;
+        margin: 20px;
+        transition: all 0.5s ease-in-out;
+        text-transform: uppercase;
+    }
+ 
+    .ali:hover {
+        text-decoration: none;
+        color: #8254ff;
+    }
+ 
+    .title {
+        text-decoration: none;
+        font-size: 35px;
+        color: #f9f9f9;
+        background-color: #8254ff;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        transition: all 0.5s ease-in-out;
+        text-transform: uppercase;
+    }
+ 
+    .title:hover {
+        text-decoration: none;
+        font-size: 35px;
+        color: #8254ff;
+        background-color: #f9f9f9;
+    }
+</style>
