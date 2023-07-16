@@ -64,7 +64,7 @@ typeset -i index=0
 
 while read l
 do
-	if [ "$(systemctl status sshd | grep running)" != "" ]
+	if [ "$(systemctl status sshd 2>/dev/null | grep running)" != "" ]
 	then
 		Sssh=1
     fi
@@ -95,7 +95,7 @@ typeset -i index=0
 
 while read l
 do
-    if [ "$(systemctl status apache2 | grep running)" != "" ]
+    if [ "$(systemctl status apache2 2>/dev/null | grep running)" != "" ]
     then
 		Sapache2=1
     fi
